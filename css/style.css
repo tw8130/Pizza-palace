@@ -1,6 +1,5 @@
 .zan {
-    color: rgb(17, 221, 41);
-    font-family: 'Nosifer', ; 
+    color: black;
     background-image: url(../images/pizza-animated-gif-33.gif);
     background-repeat: no-repeat;
     font-size: larger;
@@ -13,7 +12,7 @@
 nav {
     display: inline;
     background-color: rgb(170, 18, 48);
-    background-image: url(../images/5557f99eec810cd6b8c1dd149045e007_w200.gif);
+    background-image: url(../images/pizza-76.gif);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -21,5 +20,7 @@ nav {
 #pizza {
     margin-right: auto;
     margin-left: auto;
+    flex: auto;
+    flex-direction: row;
 }
     
