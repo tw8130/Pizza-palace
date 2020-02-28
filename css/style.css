@@ -1,13 +1,4 @@
-.zan {
-    color: black;
-    text-align: center;
-    font-size: 100%;
-    
-}
-.gigo {
-    text-align: center;
 
-}
 nav {
     display: inline;
     background-color: rgb(170, 18, 48);
@@ -16,12 +7,20 @@ nav {
     background-size: cover;
 
 }
-#pizza {
+h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, ; 
+}
+/* #pizza {
     margin-right: auto;
     margin-left: auto;
     flex: auto;
-    flex-direction: row;
+    flex-direction: row; */
+.welcome {text-align: center;}
+.col-md-6 bienvenida-txt {
+    text-emphasis-position: center;
 }
-h1 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, ; 
+body {
+    background-image: url(../images/Pizza-Party-10-Piece-Photo-Booth-Props-Kit.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
