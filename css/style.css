@@ -94,6 +94,11 @@ h2 {
 }
 .jumbotron2 {
   color: aliceblue;
+}#form {
+  display: none;
+}
+.row {
+  color: aliceblue;
 }
 
   /* .mac {
