@@ -92,6 +92,9 @@ h2 {
   color: white;
   transform: rotateY(180deg);
 }
+.jumbotron2 {
+  color: aliceblue;
+}
 
   /* .mac {
     position: absolute;
