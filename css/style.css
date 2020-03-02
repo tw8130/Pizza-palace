@@ -77,7 +77,7 @@ h2 {
   transform: rotateY(180deg);
 }
 .jumbotron2 {
-  color: aliceblue;
+  color: blue;
 }#form {
   display: none;
 }
@@ -179,6 +179,9 @@ h2 {
   background-image: url(../images/pizza-menu-chalkboard-cartoon-background-600w-397583476.webp);
   background-repeat: no-repeat;
   background-size: cover;
+}
+#orderForm {
+  display: none;
 }
 
   /* .mac {
