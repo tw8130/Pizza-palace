@@ -6,14 +6,16 @@ By Tabitha Wanjiku
 The project entails making a website about an ordering pizza system where one can order their pizza of their own choice with toppings , crust and  the number of pizza they desire.Customers can request for delivery and then the system shows the total charges and an alert message for delvery after inputing their location details.
 ## SETUP INSTALLATION
 You:
-.First create a Github repo
-.Click on the active site to view the project
+.First create a Github repo;
+
+.Click on the active site to view the project;
 ## LINK TO LIVE SITE:
 Here is my link to my project
-<a href="https://tw8130.github.io/Pizza-palace/."></a>view
+<a href="https://tw8130.github.io/Pizza-palace/.">view</a>
 
 ## KNOWN BUGS:
 Any bugs noted you can email me for clarification.
+
 The grand total brings results with recuurring decimals.git 
 
 ## TECHNOLOGIES USED:
