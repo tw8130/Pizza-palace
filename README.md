@@ -14,7 +14,7 @@ Here is my link to my project
 
 ## KNOWN BUGS:
 Any bugs noted you can email me for clarification.
-The grand total brings results with recuurring decimals.
+The grand total brings results with recuurring decimals.git 
 
 ## TECHNOLOGIES USED:
 .html
