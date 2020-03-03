@@ -105,12 +105,6 @@ $(document).ready(function(){
       $(".navTab").removeClass("selected");
       $(this).addClass("selected");
   }
-  $("#stepOne").click(function(){
-    $("#infoSummary").toggle();
-  });
-  $("#stepTwo").click(function(){
-    $("#mealSummary").toggle();
-  });
     // $("#mealSummary").toggle();
     
   // });
