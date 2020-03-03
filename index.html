@@ -184,85 +184,106 @@
                 </div>
             </div>
         </div>
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="largesubmitbutton">
-                <button type="submit" class="btn btn-danger" id="kilo">Place Order</button>
-            </div>
-            <form id="orderForm">
-                <div id="pizza-order">
-                    <div class="second-pizza">
-                        <div class="jumbotron3">
-                            <br><br>
-                            <h2>Choose your sizes</h2>
-                            <select class="form-control pizza-size">
-                                <option value="6">Small kshs=200</option>
-                                <option value="8">Medium kshs=500</option>
-                                <option value="10">Large kshs=1000</option>
-                            </select>
-                            <h2>Choose your toppings</h2>
-                            <select class="form-control pizza-toppings">
-                                <option value="tomato">Tomato @ sh. 80</option>
-                                <option value="onions">Onions @ sh. 80</option>
-                                <option value="mushroom">Mushroom @ sh. 80</option>
-                                <option value="greenpepper">Green Pepper @ sh. 80</option>
-                                <option value=""></option>
-                                <option value="olives">Olives @ sh. 120</option>
-                                <option value="pineapple">Pineapple @ sh. 120</option>
-                                <option value="sweetcorn">Sweet Corn @ sh. 120</option>
-                                <option value="macon">Macon @ sh. 120</option>
-                                <option value="mince">Mince @ sh. 120</option>
-                                <option value=""></option>
-                                <option value="beef">Beef Peperoni @ sh. 170</option>
-                                <option value="chicken">Periperi Chicken @ sh. 170</option>
-                            </select>
-                            <h2>Choose your favorite Crust</h2>
-                            <select class="custom-select custom-select-md mb-3" id="crust" required>
-                                <option value="thin">Crispy Crust @ Ksh. 100</option>
-                                <option value="thick">Stuffed Crust @ Ksh. 150</option>
-                                <option value="flatbread">Gluten-free Crust @ sh. 180</option>
-                            </select>
-                            <h2>Choose the number of pizzas</h2>
-                            <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1"
-                                required>
-                            <br></br>
-                            <div class="form-reload">
-                                <button type="submit" class="btn btn-danger btn-lg">Replace Order</button>
-                            </div> 
-                        </div>
-                    </div>
+        <div id="page">
+            <div class="tabs">
+                <!-- <ul class="tabNavigation">
+                    <li><a href="pizzaTabs.html#pizza" class="navTab">Creator</a></li>
+                    <li><a href="pizzaTabs.html#deliveryInfo" class="navTab">Delivery info</a></li>
+                    <li><a href="pizzaTabs.html#summary" class="navTab">Summary</a></li>
+                </ul> -->
+                <div id="pizza" class="divTab">
+                    <form>
+                        <fieldset>
+                            <legend class="legend">Pie Size</legend>
+                            <label>
+                                <input type="radio" name="size" id="small" value="Small" checked>Small (10"): ksh 700.00<br/>
+                                <input type="radio" name="size" id="medium" value="Medium">Medium (12"): ksh 900.00<br/>
+                                <input type="radio" name="size" id="large" value="Large">Large (14"): ksh 1200.00<br/>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="legend">Crust Type</legend>
+                            <label>
+                                <input type="radio" name="crust" id="glutenfree" value="Gluten Free" checked>Gluten-free<br/>
+                                <input type="radio" name="crust" id="deepdish" value="Deep dish">Deep-dish<br/>
+                                <input type="radio" name="crust" id="original" value="Original">Original Pan Crust<br/>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="legend">Meats</legend>
+                            <label>
+                                <input type="checkbox" name="meat" id="sausage" value="Sausage">Sausage: ksh 150.00<br/>
+                                <input type="checkbox" name="meat" id="pepperoni" value="Pepperoni">Pepperoni: ksh 150.00<br/>
+                                <input type="checkbox" name="meat" id="chicken" value="Chicken">Chicken: ksh 150.00<br/>
+                                <input type="checkbox" name="meat" id="ham" value="Ham">Ham: ksh 150.00<br/>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="legend">Veggies</legend>
+                            <label>
+                                <input type="checkbox" name="veggie" id="greenpeppers" value="Green Peppers">Green Peppers:
+                                ksh 100.00<br/>
+                                <input type="checkbox" name="veggie" id="bananapeppers" value="Banana Peppers">Banana Peppers:
+                                ksh 100.00 <br/>
+                                <input type="checkbox" name="veggie" id="mushrooms" value="Mushrooms">Mushrooms: ksh 100.00<br/>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="legend">Preview your order</legend>
+                            <label>
+                            <p id="OrderView"></p>
+                            </label>
+                        </fieldset>
+                    </form>
+                    <button type="submit" id="stepOne">Submit</button>
                 </div>
-            </form>
+                <div id="deliveryInfo" class="divTab">
+                    <form>
+                        <fieldset>
+                            <legend class="legend">Name</legend>
+                            <label>
+                                First name:<input type="text" name="names" id="firstname" required><br/>
+                                Last name:<input type="text" name="names" id="lastname" required><br/>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="legend">Delivery & Contact info</legend>
+                            <label>
+                                Phone Number: <input type="tel" name="names" id="phonenumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                                     required><br/>
+                                Street : <input type="text" name="names" id="streetaddress" required><br/>
+                                City: <input type="text" name="names" id="city" required><br/>
+                                County: <input type="text" name="names" id="state" required><br/>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Review your contact information</legend>
+                            <label>
+                                <p id="contactInfo"></p>
+                            </label>
+                        </fieldset>
+                    </form>
+                    <button type="submit" id="stepTwo">Submit</button>
+                </div>
+                <div id="summary" class="divTab">
+                    <form >
+                        <fieldset>
+                            <legend class="legend">Order Summary</legend>
+                            <label>
+                                <p id="infoSummary"></p>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="legend">Meal Summary</legend>
+                            <label>
+                                <p id="mealSummary"></p>
+                            </label>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="jumbotron2">
-        <h3> Your Order: </h3>
-        <h4><b>Size:</b><span class="sizeresults"></span></h4>
-        <h4><b>Toppings:</b><span class="ingredientsresults"></span></h4>
-        <h4><b>Crust:</b><span class="crustresults"></span></h4>
-        <h4><b>Number of pizzast:</b><span class="numberresults"></span></h4>
-        <h4><b>Total Cost: $</b><span class="total"></span></h4>
-    </div>
-    <br><br><br>
-    <div class="d-block mx-auto text-center">
-        <button class='deliver'>Make Delivery</button>
-        <button class='delivernot'>Pick Up</button>
-    </div>
-    <div class="cdata-overlay" >
-        <div class="customerdata row">
-            <div class="col-sm-3"></div>
-            <h2>Order delivery @kshs. 100</h2>
-            <form action="" class="form-group col-sm-6 data" id="form">
-                <input type="text" class="form-control cdata" placeholder="Enter your Name:">
-                <input type="text" class="form-control cdata" placeholder="Enter your phone number: ">
-                <input type="text" class="form-control cdata" placeholder="Enter the location: ">
-                <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
-            </form>
-
-            <div class="col-sm-3"></div>
-        </div>
-    </div>
-    </div>
+    
 
     <br><br><br>
     <div id="contacts" >
