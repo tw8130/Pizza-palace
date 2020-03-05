@@ -31,8 +31,9 @@ $(document).ready(function(){
   var smallCrust = 700;
   var mediumCrust = 900;
   var largeCrust = 1200;
+  var oneCrust = 100;
   var oneVeggie = 100;
-  var oneMeat = 150;
+  var oneMeat = 150;  
   //Assists with moving from one tab to the next as its the next element in the list
   function nextPage() {
       $(".navTab").eq(1).click();
@@ -76,13 +77,16 @@ $(document).ready(function(){
       } else {
           alert("Hey" + firstName + "your pizza will be delivered to your location.")
       }
+      var crustType = $("input[name='crust']:checked").length;
+      if (crustType > 0 ){
+          subtotal = subtotal + (crustType * 100);
       var meats = $("input[name='meat']:checked").length;
       if (meats > 0 ){
           subtotal = subtotal + (meats * 150);
       }
       var veggies = $("input[name='veggie']:checked").length;
       if (veggies > 0 ){
-          subtotal = subtotal + (veggies)
+          subtotal = subtotal + (veggies )
       }
       var tax = subtotal * .16;
       //ksh 200 is the price of delivery
@@ -105,10 +109,4 @@ $(document).ready(function(){
       $(".navTab").removeClass("selected");
       $(this).addClass("selected");
   }
-    // $("#mealSummary").toggle();
-    
-  // });
-
-  
-
-  
+  }
